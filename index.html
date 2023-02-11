@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>hello-wasm example</title>
+  </head>
+  <body>
+    <h1>hello</h1>
+    <script type="module">
+      import init, { greet } from "./pkg/wasm_demo.js";
+      init().then(() => {
+        greet("WebAssembly??");
+      });
+    </script>
+  </body>
+</html>
